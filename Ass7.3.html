@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Closure</title>
+    <script type="text/javascript">
+        function Closure()
+        {
+            var counter = 0;
+            return {
+                getfun:function()
+                {
+                    counter = counter + 1;
+                    return counter;
+                  
+
+                }
+
+            };
+            
+        }
+        var res = Closure();
+        console.log("Counter value is " ,res.getfun());
+        console.log("Counter value is ", res.getfun());
+        Closure();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
